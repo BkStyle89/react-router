@@ -1,7 +1,12 @@
-export default function Header(){
+export default function AppHeader(){
     return(
         <>
-        <p>Header</p>
+        <header>
+            <a href="/">HomePage</a>
+            <a href="ChiSiamo">Chi Siamo</a>
+            <a href="Prodotti">Prodotti</a>
+            
+        </header>
         </>
     )
 }

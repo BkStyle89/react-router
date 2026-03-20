@@ -1,12 +1,13 @@
 import AppHeader from "../components/AppHeader"
 import AppFooter from "../components/AppFooter"
-export default function Prodotti(){
+export default function Homepage(){
 
 return(
     <div>
         <AppHeader/>
         <main>
-            <h1>Prodotti</h1>
+            <h1>Homepage</h1>
+            
         </main>
         <AppFooter/>
     </div>

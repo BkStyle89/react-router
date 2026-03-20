@@ -8,11 +8,9 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <nav>
-            <NavLink to="/" element={<Homepage/>}/>
-            <NavLink to="/ChiSiamo" element={<ChiSiamo/>}/>
-            <NavLink to="Prodotti" element={<Prodotti/>}/>
-          </nav>  
+            <Route path="/" element={<Homepage/>}/>
+            <Route path="/ChiSiamo" element={<ChiSiamo/>}/>
+            <Route path="Prodotti" element={<Prodotti/>}/>  
         </Routes>
       </BrowserRouter>
     </>
