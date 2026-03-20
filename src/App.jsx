@@ -8,9 +8,11 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
+          
             <Route path="/" element={<Homepage/>}/>
             <Route path="/ChiSiamo" element={<ChiSiamo/>}/>
             <Route path="Prodotti" element={<Prodotti/>}/>  
+          
         </Routes>
       </BrowserRouter>
     </>
