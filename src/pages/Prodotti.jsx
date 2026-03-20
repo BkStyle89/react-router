@@ -8,7 +8,7 @@ const [products,setProducts]=useState([])
 
 function getProducts(){
 fetch(api_link)
-.then(res=res.json())
+.then(res=>res.json())
 .then(data=>{setProducts(data)
 
 })
@@ -24,12 +24,14 @@ return(
                     {products.map(product=>(
                         <div key={product.id}>
                             <div className="col">
-                                <h3>{product.title}</h3>
-                                <p>{product.price}</p>
-                                <p>{product.description}</p>
-                                <p>{product.category}</p>
-                                <img src={product.image} alt="" />
-                                <h5>{product.rating}</h5>
+                                <div className="card">
+                                    <h3>{product.title}</h3>
+                                    <p>{product.price}</p>
+                                    <p>{product.description}</p>
+                                    <p>{product.category}</p>
+                                    <img src={product.image} alt="" />
+                                    <h5>{product.rating.rate}</h5>
+                                </div>
                             </div>
                         </div>
                     ))}
@@ -39,5 +41,4 @@ return(
         <AppFooter/>
     </div>
 )
-
 }
