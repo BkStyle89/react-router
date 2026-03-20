@@ -1,10 +1,10 @@
 export default function AppHeader(){
     return(
         <>
-        <header>
-            <a href="/">HomePage</a>
-            <a href="ChiSiamo">Chi Siamo</a>
-            <a href="Prodotti">Prodotti</a>
+        <header className="text-center p-3">
+            <a className="text-decoration-none p-2" href="/">HomePage</a>
+            <a className="text-decoration-none p-2" href="ChiSiamo">Chi Siamo</a>
+            <a className="text-decoration-none p-2 " href="Prodotti">Prodotti</a>
             
         </header>
         </>
