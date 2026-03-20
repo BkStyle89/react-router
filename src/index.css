@@ -1,7 +1,27 @@
 @import url('bootstrap');
 
+*{
+    background-color: steelblue;
+}
+main{
+    min-height: 87vh;
+}
+.card{
+    border: solid black 2px;
+}
 
 
+
+.footerBar{
+    height: 80px;
+    background-image: url(./assets/modern-minimalist-dark-blue-premium-abstract-background-with-luxury-geometric-dark-shape-exclusive-wallpaper-design-for-website-poster-brochure-presentation-free-vector.jpg);
+    
+}
+    
+.headerBar{
+    height: 60px;
+    background-image: url(./assets/modern-minimalist-dark-blue-premium-abstract-background-with-luxury-geometric-dark-shape-exclusive-wallpaper-design-for-website-poster-brochure-presentation-free-vector.jpg);
+}
 
 #descr{
     font-size: 12px;

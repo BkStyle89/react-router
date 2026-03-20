@@ -1,8 +1,7 @@
 export default function AppFooter(){
     return(
         <>
-        <footer>
-            <p>footer</p>
+        <footer className="footerBar rounded-top-5 d-flex mt-auto">
         </footer>
         </>
     )

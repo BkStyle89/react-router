@@ -24,16 +24,17 @@ return(
                     {products.map(product=>(
                         <div key={product.id}>
                             <div className="col justify-content-center d-flex h-100 w-100 align-self-stretch">
-                                <div className="card p-3 ">
-                                    <h5 className="card-title text-center">{product.title}</h5>
+                                <div className="card p-3 bg-light">
+                                    <h5 className="card-title text-center bg-light">{product.title}</h5>
                                     <p> </p>
-                                    <p className="card-text" id="descr">{product.description}</p>
-                                    <p className="card-text">{product.category}</p>
-                                    <img className="Card-img p-5 mt-auto" src={product.image} alt="" />
+                                    <p className="card-text bg-light" id="descr">{product.description}</p>
+                                    <p className="card-text bg-light">{product.category}</p>
+                                    
+                                    <img className="Card-img p-5 mt-auto bg-light " src={product.image} alt="" />
                                     <br />
-                                    <div className="d-flex justify-content-between mt-auto ">
-                                        <h5>{product.rating.rate} voti:{product.rating.count} </h5>
-                                        <h5 className="text-end">{product.price}&#8364;</h5>
+                                    <div className="d-flex justify-content-between mt-auto bg-light">
+                                        <h5 className="bg-light">{product.rating.rate} voti:{product.rating.count} </h5>
+                                        <h5 className="text-end bg-light">{product.price}&#8364;</h5>
                                     </div>
                                 </div>
                             </div>
