@@ -1,6 +1,7 @@
 import AppHeader from "../components/AppHeader"
 import AppFooter from "../components/AppFooter"
 import { useEffect,useState } from "react"
+
 export default function Prodotti(){
 
 const api_link ="https://fakestoreapi.com/products"
@@ -35,6 +36,7 @@ return(
                                     <div className="d-flex justify-content-between mt-auto bg-light">
                                         <h5 className="bg-light">{product.rating.rate} voti:{product.rating.count} </h5>
                                         <h5 className="text-end bg-light">{product.price}&#8364;</h5>
+                                        <a href={`/prodotti/${product.id}`}> Vedi Prodotto</a>
                                     </div>
                                 </div>
                             </div>
