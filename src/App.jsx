@@ -2,6 +2,7 @@ import { BrowserRouter,Route,Routes } from "react-router-dom"
 import Homepage from "./pages/Homepage"
 import ChiSiamo from "./pages/ChiSiamo"
 import Prodotti from "./pages/Prodotti"
+import prodottoSingolo from "./pages/prodottoSingolo"
 function App() {
  
   return (
