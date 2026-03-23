@@ -10,11 +10,15 @@ main{
     border: solid black 2px;
 }
 
-
+#singleProduct{
+    height: 10rem;
+    background-color: red;
+}
 
 .footerBar{
     height: 80px;
     background-image: url(./assets/modern-minimalist-dark-blue-premium-abstract-background-with-luxury-geometric-dark-shape-exclusive-wallpaper-design-for-website-poster-brochure-presentation-free-vector.jpg);
+    
     
 }
     
