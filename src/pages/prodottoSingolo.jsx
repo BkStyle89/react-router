@@ -1,6 +1,5 @@
 import { useEffect,useState } from "react";
 import { useParams, useNavigate } from "react-router";
-import AppHeader from "../components/AppHeader"
 import AppFooter from "../components/AppFooter"
 import axios from "axios"
 
@@ -19,6 +18,17 @@ export default function ProdottoSingolo(){
         });
     },[id,navigate]);
 console.log(id);
+
+function moveBack(){
+    if (id > 0){
+    setProduct(id - 1)
+}}
+
+function moveOn(){
+    setProduct(id + 1)
+    console.log(moveOn);
+    
+}
 
 
     return (
@@ -40,6 +50,10 @@ console.log(id);
                             <div className="d-flex justify-content-between mt-auto bg-light">
                                 <h5 className="bg-light">{product?.rating.rate} voti:{product?.rating.count} </h5>
                                 <h5 className="text-end bg-light">{product?.price}&#8364;</h5>
+                            </div>
+                            <div className="d-flex justify-content-between mt-auto bg-light">
+                                <button onClick={moveBack}>Indietro </button>
+                                <button onClick={moveOn}>Avanti</button>
                             </div>
                         </div>
                     </div>
