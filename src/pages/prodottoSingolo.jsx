@@ -14,19 +14,18 @@ export default function ProdottoSingolo(){
         .then((res)=> setProduct(res.data)
         )
         .catch(err=>{
-            navigate(-1);
+            alert("404 FILE NOT FOUND")
         });
     },[id,navigate]);
 console.log(id);
 
 function moveBack(){
-    if (id > 0){
-    setProduct(id - 1)
-}}
+
+    
+}
 
 function moveOn(){
-    setProduct(id + 1)
-    console.log(moveOn);
+    
     
 }
 
