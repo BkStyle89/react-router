@@ -3,11 +3,11 @@ import { useParams, useNavigate } from "react-router";
 import AppHeader from "../components/AppHeader"
 import AppFooter from "../components/AppFooter"
 
-export default function prodottoSingolo(){
+export default function ProdottoSingolo(){
 const {id} = useParams();
 const navigate =useNavigate
     useEffect(()=>{
-        fetch("https://fakestoreapi.com/products${id}")
+        axios.get("https://fakestoreapi.com/products${id}")
         .then(res=>{
             console.log(res.data);
         })
