@@ -24,7 +24,7 @@ return(
                     {products.map(product=>(
                         <div key={product.id}>
                             <div className="col justify-content-center d-flex h-100 w-100 align-self-stretch">
-                                <div className="card p-3 bg-light">
+                                <div className="card p-3 bg-light mb-4">
                                     <h5 className="card-title text-center bg-light">{product.title}</h5>
                                     <p> </p>
                                     <p className="card-text bg-light" id="descr">{product.description}</p>
