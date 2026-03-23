@@ -36,7 +36,7 @@ return(
                                     <div className="d-flex justify-content-between mt-auto bg-light">
                                         <h5 className="bg-light">{product.rating.rate} voti:{product.rating.count} </h5>
                                         <h5 className="text-end bg-light">{product.price}&#8364;</h5>
-                                        <a href={`/prodotti/${product.id}`}> Vedi Prodotto</a>
+                                        <a className="text-decoration-none bg-light fw-bold" href={`/prodotti/${product.id}`}> Vedi Prodotto</a>
                                     </div>
                                 </div>
                             </div>
