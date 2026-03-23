@@ -2,6 +2,7 @@ import { useEffect,useState } from "react";
 import { useParams, useNavigate } from "react-router";
 import AppFooter from "../components/AppFooter"
 import axios from "axios"
+import { Link } from "react-router";
 
 export default function ProdottoSingolo(){
     
@@ -19,15 +20,6 @@ export default function ProdottoSingolo(){
     },[id,navigate]);
 console.log(id);
 
-function moveBack(){
-
-    
-}
-
-function moveOn(){
-    
-    
-}
 
 
     return (
@@ -37,6 +29,7 @@ function moveOn(){
             <a className="text-decoration-none p-2 text-light bg-primary " href="/ChiSiamo">Chi Siamo</a>
             <a className="text-decoration-none p-2 text-light bg-primary" href="/Prodotti">Prodotti</a>
         </header>
+        <main>
             <div  className="container">
                 <div className="row">
                     <div className="col justify-content-center d-flex h-100 w-100 align-self-stretch">
@@ -47,17 +40,23 @@ function moveOn(){
                             <img className="Card-img p-5 mt-auto bg-light " src={product?.image} alt="" />
                             <br />
                             <div className="d-flex justify-content-between mt-auto bg-light">
-                                <h5 className="bg-light">{product?.rating.rate} voti:{product?.rating.count} </h5>
+                                <h5 className="bg-light">{product?.rating?.rate} voti:{product?.rating?.count} </h5>
                                 <h5 className="text-end bg-light">{product?.price}&#8364;</h5>
                             </div>
                             <div className="d-flex justify-content-between mt-auto bg-light">
-                                <button onClick={moveBack}>Indietro </button>
-                                <button onClick={moveOn}>Avanti</button>
+                                {Number(id) > 1 ? 
+                                <Link className="btn btn-primary" to={`/prodotti/${Number(id) -1}`}>Indietro </Link>:
+                                <div></div>
+                                }
+                                {Number(id) < 20 &&
+                                <Link className="btn btn-primary"  to={`/prodotti/${Number(id) + 1}`}>Avanti</Link>
+                                }
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            </main>
             <AppFooter/>
         </div>
     )
